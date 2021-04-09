@@ -272,5 +272,33 @@ In development, after all scripts get loaded, react loads the CSS as BLOBs. That
 #### Client and Server Markup Mismatch
 This warning is visible only on development and totally harmless. This occurs to hash difference in `react-router`. To solve it, react router docs asks you to use `match` function. If we use `match`, `react-hot-reloader` stops working.
 
+
+## Mongo Command
+
+  step 1: Enter into the MongoDB shell.
+
+      mongo
+
+  step 2: for the display all the databases.
+
+      show dbs;
+
+  step 3: for a select database :
+
+      use 'databases_name'
+
+  step 4: for statistics of your database.
+
+      db.stats()
+
+  step 5: listing out all the collections(tables).
+
+      show collections
+
+  step 6:print the data from a particular collection.
+
+      db.'collection_name'.find().pretty()
+
+
 ## License
 MERN is released under the [MIT License](http://www.opensource.org/licenses/MIT).
